@@ -16,5 +16,8 @@ public class Main {
         }
         TitleChartData chartData = new TitleChartData(statistics);
         CategoryDataset dataset = chartData.createDataset();
+
+        TitleChartDisplay chartDisplay = new TitleChartDisplay(dataset);
+        chartDisplay.display();
     }
 }
