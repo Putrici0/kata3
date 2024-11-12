@@ -1,3 +1,5 @@
+import org.jfree.data.category.CategoryDataset;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -12,5 +14,7 @@ public class Main {
         for (String key : statistics.keySet()) {
             System.out.println(key+" = "+ statistics.get(key));
         }
+        TitleChartData chartData = new TitleChartData(statistics);
+        CategoryDataset dataset = chartData.createDataset();
     }
 }
