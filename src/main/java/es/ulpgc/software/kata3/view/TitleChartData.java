@@ -1,3 +1,5 @@
+package es.ulpgc.software.kata3.view;
+
 import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.category.DefaultCategoryDataset;
 

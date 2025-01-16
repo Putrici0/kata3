@@ -1,3 +1,5 @@
+package es.ulpgc.software.kata3.view;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -16,8 +18,8 @@ public class TitleChartDisplay {
     public void display() {
         JFreeChart chart = ChartFactory
                 .createBarChart(
-                        "Title Types Statistics",
-                        "Title Type",
+                        "es.ulpgc.software.kata3.model.Title Types Statistics",
+                        "es.ulpgc.software.kata3.model.Title Type",
                         "Count",
                         dataset,
                         PlotOrientation.VERTICAL,
@@ -25,7 +27,7 @@ public class TitleChartDisplay {
                         true,
                         false);
 
-        JFrame frame = new JFrame("Title Histogram");
+        JFrame frame = new JFrame("es.ulpgc.software.kata3.model.Title Histogram");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(new ChartPanel(chart));
         frame.pack();

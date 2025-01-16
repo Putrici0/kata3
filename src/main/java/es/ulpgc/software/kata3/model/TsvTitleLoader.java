@@ -1,3 +1,5 @@
+package es.ulpgc.software.kata3.model;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

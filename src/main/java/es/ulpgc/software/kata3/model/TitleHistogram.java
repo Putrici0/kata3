@@ -1,3 +1,5 @@
+package es.ulpgc.software.kata3.model;
+
 import java.util.List;
 import java.util.Map;
 

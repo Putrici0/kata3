@@ -1,3 +1,10 @@
+package es.ulpgc.software.kata3.control;
+
+import es.ulpgc.software.kata3.model.Title;
+import es.ulpgc.software.kata3.model.TotalTitleStatistics;
+import es.ulpgc.software.kata3.model.TsvTitleLoader;
+import es.ulpgc.software.kata3.view.TitleChartData;
+import es.ulpgc.software.kata3.view.TitleChartDisplay;
 import org.jfree.data.category.CategoryDataset;
 
 import java.io.File;
@@ -8,7 +15,7 @@ import java.util.Map;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        List<Title> titleList = TsvTitleLoader.with(new File("C:/Users/paull/Desktop/Ingenieria Informática - ULPGC/Tercero/is2 katas/kata2/title.basics.tsv")).load();
+        List<Title> titleList = TsvTitleLoader.with(new File("title.basics.tsv")).load();
 
         Map<String, Integer> statistics = new TotalTitleStatistics().execute(titleList);
         for (String key : statistics.keySet()) {
